@@ -16,26 +16,26 @@ All figures reported in the manuscript can be reproduced by running:
 pip install -r requirements.txt
 python scripts/generate_all.py
 
-Individual analyses are also available as separate scripts in `scripts/`:
-- `run_main.py` — Figures 1–11 (immune/exposure panels, time series, metrics)
-- `run_hopf.py` — Figure 12 (Hopf bifurcation validation)
-- `run_sensitivity.py` — Figure 13 (parameter sensitivity)
-- `run_clinical.py` — Figure 14 (clinical decay-rate validation)
+All generated figures are saved in the figures/ directory.
 
-## Repository Structure
+Individual analyses are also available as separate scripts in scripts/:
 
-- `src/` — model definitions, DDE solver, metrics, and experiment runner
-- `scripts/` — figure generation scripts
-- `figures/` — output directory (created automatically)
+run_main.py — Figures 1–11 (immune/exposure panels, time series, metrics)
+run_hopf.py — Figure 12 (Hopf bifurcation validation)
+run_sensitivity.py — Figure 13 (parameter sensitivity)
+run_clinical.py — Figure 14 (clinical decay-rate validation)
+Repository Structure
+src/ — model definitions, DDE solver, metrics, and experiment runner
+scripts/ — figure generation scripts
+figures/ — output directory (created automatically)
+Numerical Scheme
 
-## Numerical Scheme
+The DDE is integrated using a method-of-steps approach with an explicit forward Euler scheme (time step $\Delta t = 0.01$ days).
+Delayed terms are evaluated by linear interpolation between grid points.
 
-The DDE is integrated with an explicit forward-Euler method of steps
-(dt = 0.01 days). Delayed terms are evaluated by linear interpolation.
-This matches the numerical methodology described in the manuscript.
+This implementation is consistent with the numerical methodology described in the manuscript.
 
-## Requirements
-
+Requirements
 Python ≥ 3.8
 NumPy
 SciPy
@@ -43,8 +43,7 @@ Matplotlib
 
 Install dependencies with:
 
-```bash
 pip install -r requirements.txt
+Citation
 
-## Citation
 If you use this code, please cite the associated manuscript.
