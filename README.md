@@ -17,6 +17,7 @@ pip install -r requirements.txt
 python scripts/generate_all.py
 
 ---
+
 ## Individual analyses are also available as separate scripts in scripts/:
 | Script               | Output                                                                               |
 | -------------------- | ------------------------------------------------------------------------------------ |
@@ -26,6 +27,7 @@ python scripts/generate_all.py
 | `run_clinical.py`    | Figure 14 (clinical decay-rate validation)                                           |
 
 ---
+
 ## Repository Structure
 viral-dynamics-dde/
 ├── requirements.txt          # Python dependencies
@@ -45,11 +47,13 @@ viral-dynamics-dde/
 └── figures/                  # Generated outputs (auto-created)
 
 ---
+
 ## Numerical Scheme
 The delayed differential equation is integrated with an explicit forward-Euler method of steps (dt = 0.01 days). Delayed terms C(t − τ) are evaluated by linear interpolation of previously computed solution values. This scheme matches the numerical methodology described in Section 4 of the manuscript.
 Baseline parameters (Table 3): r = 2.8, γ = 0.25, ρ = 0.35, τ = 2.0 days.
 
 ---
+
 ## Requirements
 Python ≥ 3.8
 NumPy ≥ 1.21.0
@@ -61,5 +65,6 @@ Install dependencies with:
 pip install -r requirements.txt
 
 ---
+
 ## Citation
 If you use this code, please cite the associated manuscript.
