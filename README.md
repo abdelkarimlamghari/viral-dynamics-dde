@@ -76,4 +76,28 @@ pip install -r requirements.txt
 
 ## Citation
 
-If you use this code, please cite the associated manuscript.
+## Citation
+
+If you use this repository in your research, please cite:
+
+Lamghari A, Jebrane A. *Delayed immune responses and heterogeneous exposure shape within-host viral dynamics*. Mathematical Biosciences and Engineering. 2026;23(6):1799–1843. doi:10.3934/mbe.2026066
+
+### BibTeX
+
+```bibtex
+@article{Lamghari2026ViralDynamics,
+  author    = {Abdelkarim Lamghari and Aissam Jebrane},
+  title     = {Delayed immune responses and heterogeneous exposure shape within-host viral dynamics},
+  journal   = {Mathematical Biosciences and Engineering},
+  year      = {2026},
+  volume    = {23},
+  number    = {6},
+  pages     = {1799--1843},
+  doi       = {10.3934/mbe.2026066}
+}
+```
+
+### Article Link
+
+https://www.aimspress.com/article/doi/10.3934/mbe.2026066
+
