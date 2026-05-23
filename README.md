@@ -76,7 +76,6 @@ pip install -r requirements.txt
 
 ## Citation
 
-## Citation
 
 If you use this repository in your research, please cite:
 
@@ -101,3 +100,4 @@ Lamghari A, Jebrane A. *Delayed immune responses and heterogeneous exposure shap
 
 https://www.aimspress.com/article/doi/10.3934/mbe.2026066
 
+[![DOI](https://img.shields.io/badge/DOI-10.3934%2Fmbe.2026066-blue)](https://doi.org/10.3934/mbe.2026066)
